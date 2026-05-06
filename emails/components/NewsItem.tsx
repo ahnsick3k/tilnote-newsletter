@@ -139,7 +139,8 @@ export function NewsItem({
                 fontSize: typo.body,        // 14px → 16px
                 fontWeight: typo.w600,
                 color: colors.textMuted,
-                border: `1px solid ${colors.borderNeutral}`,
+                backgroundColor: '#f0f0f0',
+                border: `1px solid rgba(128,128,128,0.3)`,
                 borderRadius: radius.md,
                 padding: '16px 20px',       // 10px → 16px
                 textDecoration: 'none',

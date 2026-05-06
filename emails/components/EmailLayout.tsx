@@ -6,9 +6,9 @@ import { colors, typo, sp } from '../tokens'
 const darkModeStyles = `
   @media (prefers-color-scheme: dark) {
     .btn-secondary {
-      color: #c0c0c0 !important;
-      border: 1px solid rgba(255,255,255,0.28) !important;
-      background-color: rgba(255,255,255,0.08) !important;
+      color: #e0e0e0 !important;
+      background-color: rgba(255,255,255,0.18) !important;
+      border: 1px solid rgba(255,255,255,0.18) !important;
     }
   }
 `
