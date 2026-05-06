@@ -14,6 +14,7 @@ export const colors = {
   textInverse: '#ffffff',
   border: 'rgba(0,0,0,0.08)',     // gray-alpha-200
   borderStrong: 'rgba(0,0,0,0.16)', // gray-alpha-400
+  borderNeutral: 'rgba(128,128,128,0.45)', // visible in both light & dark
   borderBrand: '#0044DD',
 } as const
 

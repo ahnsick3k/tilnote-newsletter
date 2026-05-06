@@ -2,6 +2,17 @@ import { type ReactNode } from 'react'
 import { Html, Head, Body, Container, Font, Preview } from '@react-email/components'
 import { colors, typo, sp } from '../tokens'
 
+// 다크모드 스타일 — inline style은 !important로 오버라이드
+const darkModeStyles = `
+  @media (prefers-color-scheme: dark) {
+    .btn-secondary {
+      color: #c0c0c0 !important;
+      border: 1px solid rgba(255,255,255,0.28) !important;
+      background-color: rgba(255,255,255,0.08) !important;
+    }
+  }
+`
+
 interface Props {
   preview: string
   children: ReactNode
@@ -11,6 +22,7 @@ export function EmailLayout({ preview, children }: Props) {
   return (
     <Html lang="ko">
       <Head>
+        <style>{darkModeStyles}</style>
         <Font
           fontFamily="Pretendard"
           fallbackFontFamily="Helvetica"

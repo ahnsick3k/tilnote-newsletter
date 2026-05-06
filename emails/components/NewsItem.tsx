@@ -133,12 +133,13 @@ export function NewsItem({
           <Column style={{ width: '50%', paddingLeft: sp.s75 }}>
             <Link
               href={sourceUrl}
+              className="btn-secondary"
               style={{
                 fontFamily: typo.font,
                 fontSize: typo.body,        // 14px → 16px
                 fontWeight: typo.w600,
                 color: colors.textMuted,
-                border: `1px solid ${colors.borderStrong}`,
+                border: `1px solid ${colors.borderNeutral}`,
                 borderRadius: radius.md,
                 padding: '16px 20px',       // 10px → 16px
                 textDecoration: 'none',
