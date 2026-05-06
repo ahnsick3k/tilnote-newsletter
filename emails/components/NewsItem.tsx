@@ -104,7 +104,7 @@ export function NewsItem({
               paddingLeft: sp.s200,
             }}
           >
-            — {bullet}
+            • {bullet}
           </Text>
         ))}
 
